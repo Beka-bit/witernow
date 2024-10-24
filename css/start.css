@@ -1,0 +1,250 @@
+*{
+  margin: 0;
+}
+
+body{
+  background: #232323; 
+  margin: 0;
+  padding: 0;
+  color: #cdcdcd;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+
+
+#menuToggle{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover{
+  color: tomato;
+}
+
+#menuToggle input{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  opacity 0.55s ease;
+}
+
+#menuToggle span:first-child{
+  transform-origin: 0%  0%;
+}
+
+#menuToggle span:nth-last-child(2){
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing:antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+  padding: 110px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul{
+  transform: none;
+}
+
+.shop{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.video{
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 350px;
+  margin-bottom: 25px;
+}
+
+.text{
+   text-align: center;
+   margin-top: 25px;
+   margin-bottom: 25px;
+   color: white;
+}
+
+
+/*  */
+.butten-box{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   margin: auto;
+   padding: 9px;
+   border-radius: 40px;
+   width: 50%;
+   text-align: center;
+   color: white;
+}
+
+.butten-box:hover{
+  transform: scale(1.1);
+  opacity: 85%;
+}
+.box{
+   border: 1px solid #a1a1a1;
+   border-radius: 10px;
+   background-color: azure;
+   display: flex;
+   align-items: center;
+   padding: 15px 15px;
+   position: relative;
+   width: 200px;
+}
+
+h2{
+  color: rgb(84, 196, 56);
+  text-align: start;
+}
+
+.helper{
+  margin-top: 50px;
+  margin-left: 15px;
+}
+
+.suret{
+  width: 300px;
+   display: grid;
+   grid-template-columns: 45% 45% 45% 45%;
+   gap: 30px;
+}
+
+.top{
+  background: linear-gradient(0deg, rgba(29,158,54,1) 27%, rgba(200,43,59,1) 100%) ;
+  padding: 9px;
+  border-radius: 40px;
+  width: 50%;
+  color: rgb(6, 216, 51);
+}
+
+
+
+/* act.html */
+
+.suretter{
+  border: none;
+  /* width: 20px;
+  height: 20px; */
+  transition: all;
+  transform: scale(1);
+  margin-top: 40px;
+  /* animation-duration: 1000ms; */
+  /* animation: blink 3s infinite; */
+  transition-duration :2s ;
+  margin-top: 15px;
+  column-gap: 5px;
+  padding: 15px;
+}
+
+.suretter:hover{
+  padding: 25px;
+  color: cornflowerblue;
+}
+.suretter1{
+  width: 300px ;
+  height: 300px;
+  margin-left: 50px;
+}
+.suretter1:hover{
+  width: 400px;
+  height: 400px;
+}
+h4{
+  text-align: center;
+  align-items: center;
+  font-size: 16px;
+  display: flex;
+  text-decoration: none;
+  margin-left: 50px;
+}
+
+button{
+  margin-left: 50px;
+}
+
+/* order.html */
+.send{
+  background-color: red;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 1px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+ .form{
+  margin-left: 50px;
+  margin-top: 100px;
+ }
+

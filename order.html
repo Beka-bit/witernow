@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/start.css">
+</head>
+<body>
+    <header class="header">
+        <nav role="navigation">
+         <div id="menuToggle">
+             <input type="checkbox">
+             <span></span>
+             <span></span>
+             <span></span>
+             <ul id="menu">
+                <a href="index.html"><li>Басты бет</li></a>
+                 <a href="act.html"><li>Біздің товарлар</li></a>
+                 <a href="order.html"><li>Сатып алу</li></a>
+                 <a href="help.html"><li>Көмек</li></a>
+             </ul>
+         </div>
+        </nav>
+     </header>
+   <main>
+
+    <form class="form" action="">
+        <label for="name">Атыңыз:</label>
+        <input type="text" name="name" pattern="[A-Za-z]" required> 
+        <br><br>
+        <label for="last">Тегіңіз:</label>
+        <input type="text" name="last" pattern="[A-Za-z]" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" pattern="[A-Za-z0-9]{3,10}" required>
+        <br><br>
+        <label for="bye">Сатып алу:</label>
+        <select name="tovar" class="tovar" required>
+            <option value=""></option>
+            <option value="">Коньки </option>
+            <option value="">Сноуборд</option>
+            <option value="">Тауға арналған шаңғы</option>
+            <option value="">Шаңғы</option>
+            <option value="">Тауға арналған шаңғы</option>
+            <option value="">Тауға арналған көзілдірік</option>
+            <option value="">Қорғаныс бас киім</option>
+            <option value="">Суық өткізбейтін шорты</option>
+            <option value="">Ауыстыратын аяқ киім</option>
+            <option value="">Саньки</option>
+        </select>
+        <button class="send">Жеткізу</button>
+    </form>
+   </main>
+</body>
+</html>
